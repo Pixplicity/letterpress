@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:autoCompleteTextViewStyle">@style/FontAutoCompleteTextViewStyle</item>
+        <item name="android:buttonStyle">@style/FontButtonStyle</item>
+        <item name="android:checkboxStyle">@style/FontCheckBoxStyle</item>
+        <item name="android:editTextStyle">@style/FontEditTextStyle</item>
+        <item name="android:radioButtonStyle">@style/FontRadioButtonStyle</item>
+        <item name="android:textViewStyle">@style/FontTextViewStyle</item>
+        <item name="android:buttonStyleToggle">@style/FontToggleButton</item>
+
+        <item name="autoCompleteTextViewStyle">@style/FontAutoCompleteTextViewStyle</item>
+        <item name="buttonStyle">@style/FontButtonStyle</item>
+        <item name="checkboxStyle">@style/FontCheckBoxStyle</item>
+        <item name="editTextStyle">@style/FontEditTextStyle</item>
+        <item name="radioButtonStyle">@style/FontRadioButtonStyle</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+
+    </style>
+</resources>

@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="FontAutoCompleteTextViewStyle" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#F00</item>
+    </style>
+
+    <style name="FontButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#F00</item>
+    </style>
+
+    <style name="FontCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#00ff29</item>
+    </style>
+
+    <style name="FontEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#F00</item>
+    </style>
+
+    <style name="FontRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#F00</item>
+    </style>
+
+    <style name="FontTextViewStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#F00</item>
+    </style>
+
+    <style name="FontToggleButton" parent="@android:style/Widget.Button.Toggle">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+        <item name="android:textColor">#F00</item>
+    </style>
+</resources>

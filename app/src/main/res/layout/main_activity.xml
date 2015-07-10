@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World no custom font"/>
+
+    <com.pixplicity.fontview.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom font from theme"/>
+
+    <com.pixplicity.fontview.FontTextView
+        style="@style/FontTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom font from style"/>
+
+    <com.pixplicity.fontview.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom font from attribute"
+        app:pix_font="fonts/Action_Man.ttf"/>
+
+    <com.pixplicity.fontview.FontButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I also have a customfont"/>
+
+    <com.pixplicity.fontview.FontCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Me to I also have a custom font"/>
+
+    <com.pixplicity.fontview.FontRadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I also custom"/>
+
+    <com.pixplicity.fontview.FontToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"/>
+
+    <com.pixplicity.fontview.FontEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditText"/>
+
+    <com.pixplicity.fontview.FontAutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView"/>
+
+    <com.pixplicity.fontview.FontMultiAutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView"/>
+</LinearLayout>

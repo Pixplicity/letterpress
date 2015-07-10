@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="pix_font" format="string"/>
+    <attr name="pix_fontBold" format="string"/>
+    <attr name="pix_fontItalic" format="string"/>
+    <attr name="pix_fontBoldItalic" format="string"/>
+
+    <declare-styleable name="FontAutoCompleteTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontButton">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontCheckBox">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontCheckedTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontCompoundButton">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontEditText">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontMultiAutoCompleteTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontRadioButton">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontToggleButton">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatAutoCompleteTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatButton">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatCheckbox">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatCheckedTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatEditText">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatMultiAutoCompleteTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatRadioButton">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+    <declare-styleable name="FontAppCompatTextView">
+        <attr name="pix_font"/>
+        <attr name="pix_fontBold"/>
+        <attr name="pix_fontItalic"/>
+        <attr name="pix_fontBoldItalic"/>
+    </declare-styleable>
+</resources>
