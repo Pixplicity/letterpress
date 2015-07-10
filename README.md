@@ -49,8 +49,10 @@ define the custom fonts that are in the assets folder, overriding the default pa
     </resources>
 
 Then in your layouts just use `FontTextView` instead of `TextView` and it will use the Action_Man font.
+
     <com.pixplicity.fontview.FontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="custom font from theme"/>
 
+You can apply your custom fonts in a few ways via the Theme or via styles directly on the view or via the view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`
