@@ -57,6 +57,8 @@ Then in your layouts just use `FontTextView` instead of `TextView` and it will u
 
 You can apply your custom fonts in a few ways via the Theme or via styles directly on the view or via the view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`
 
+Check out the sample app to see how to set it up ![Sample app](https://github.com/Pixplicity/letterpress/tree/master/app)
+
 # Download
 Download the latest [AAR](http://search.maven.org/#search|ga|1|g:"com.pixplicity.letterpress") or grab via Maven:
 ```XML
