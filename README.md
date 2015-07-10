@@ -2,7 +2,7 @@ letterpress
 ==============
 Custom fonts without writing code.
 
-show image here.
+![Sample app](https://raw.githubusercontent.com/Pixplicity/letterpress/master/raw/sample.png)
 
 Add custom fonts to your app with out writing code, just add the fonts to your them and use the customViews.
 
