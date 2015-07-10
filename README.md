@@ -95,7 +95,7 @@ Download the latest [AAR](http://search.maven.org/#search|ga|1|g:"com.pixplicity
 <dependency>
   <groupId>com.pixplicity.letterpress</groupId>
   <artifactId>library</artifactId>
-  <version>1.0</version>
+  <version>(insert latest version)</version>
   <type>aar</type>
 </dependency>
 ```
