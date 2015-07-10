@@ -6,8 +6,54 @@ Custom typefaces without a single line of code!
 
 With Letter Press, adding custom fonts to your app means not a single line of code is needed; simply add the fonts to your app, replace your views with their Font counterparts, and specify the fonts through attributes, styles and themes.
 
+All fonts are referenced into (subdirectories of) the app's `assets` folder.
+
 ## Sample
-The easiest way to set a common typeface is through providing a custom theme:
+
+You can apply your custom fonts in a few ways: by using the theme, by specifying a specific style per view, or on the view explicitly using view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`.
+
+[Check out the sample app](https://github.com/Pixplicity/letterpress/tree/master/app) to see how easy it is to set up.
+
+### Basic sample
+
+The easiest example is to set a typeface through layout attributes:
+
+```XML
+<com.pixplicity.fontview.FontTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:pix_font="fonts/Action_Man.ttf"
+    android:text="Custom font from theme"/>
+```
+
+### Style sample
+
+Through a style, you can provide the same style to multiple views. By overriding the default parent style, it's easy enough to swap out existing styles (but is not required).
+
+```XML
+<resources>
+    <style name="FontTextViewStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+    </style>
+</resources>
+```
+
+Define the style once, and you can reference it in multiple views, for instance:
+
+```XML
+<com.pixplicity.fontview.FontTextView
+    style="@style/FontEditTextStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Custom font from theme"/>
+```
+
+### Theme sample
+
+The most scalable way to set a common typeface is through providing a custom theme:
 
 ```XML
 <resources>
@@ -32,27 +78,7 @@ The easiest way to set a common typeface is through providing a custom theme:
 </resources>
 ```
 
-Specify the styles to point to the custom fonts in the app's `assets` folder. By overriding the default parent style, it's easy enough to swap out existing styles (but is not required).
-
-```XML
-<resources>
-    <style name="FontButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="pix_font">fonts/Action_Man.ttf</item>
-        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
-        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
-        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
-    </style>
-    .....
-    <style name="FontTextViewStyle" parent="@android:style/TextAppearance.Widget.TextView">
-        <item name="pix_font">fonts/Action_Man.ttf</item>
-        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
-        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
-        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
-    </style>
-</resources>
-```
-
-Now, in your layouts, replace Android widgets with the Font counterparts. For instance, use `FontTextView` instead of `TextView` and it will use the Action Man font.
+Now, in your layouts, replace Android widgets with the Font counterparts. For instance, use `FontTextView` instead of `TextView` and it will use the *Action Man* font.
 
 ```XML
 <com.pixplicity.fontview.FontTextView
@@ -60,10 +86,6 @@ Now, in your layouts, replace Android widgets with the Font counterparts. For in
     android:layout_height="wrap_content"
     android:text="Custom font from theme"/>
 ```
-
-You can apply your custom fonts in a few ways: by using the theme, by specifying a specific style per view, or on the view explicitly using view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`.
-
-[Check out the sample app](https://github.com/Pixplicity/letterpress/tree/master/app) to see how easy it is to set up.
 
 # Download
 
