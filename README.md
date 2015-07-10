@@ -1,13 +1,13 @@
-letterpress
+Letter Press
 ==============
-Custom fonts without writing code.
+Custom typefaces without a single line of code!
 
 <img src="https://raw.githubusercontent.com/Pixplicity/letterpress/master/raw/sample.png" width="350px"/>
 
-Add custom fonts to your app with out writing code, just add the fonts to your them and use the customViews.
+With Letter Press, adding custom fonts to your app means not a single line of code is needed; simply add the fonts to your app, replace your views with their Font counterparts, and specify the fonts through attributes, styles and themes.
 
 ## Sample
-Just define the views you want to apply the custom fonts on.
+The easiest way to set a common typeface is through providing a custom theme:
 
 ```XML
 <resources>
@@ -32,7 +32,7 @@ Just define the views you want to apply the custom fonts on.
 </resources>
 ```
 
-define the custom fonts that are in the assets folder, overriding the default parent style should make it uniform across the app. This is not required though.
+Specify the styles to point to the custom fonts in the app's `assets` folder. By overriding the default parent style, it's easy enough to swap out existing styles (but is not required).
 
 ```XML
 <resources>
@@ -52,18 +52,18 @@ define the custom fonts that are in the assets folder, overriding the default pa
 </resources>
 ```
 
-Then in your layouts just use `FontTextView` instead of `TextView` and it will use the Action_Man font.
+Now, in your layouts, replace Android widgets with the Font counterparts. For instance, use `FontTextView` instead of `TextView` and it will use the Action Man font.
 
 ```XML
 <com.pixplicity.fontview.FontTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="custom font from theme"/>
+    android:text="Custom font from theme"/>
 ```
 
-You can apply your custom fonts in a few ways via the Theme or via styles directly on the view or via the view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`
+You can apply your custom fonts in a few ways: by using the theme, by specifying a specific style per view, or on the view explicitly using view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`.
 
-Check out the sample app to see how to set it up [Sample app](https://github.com/Pixplicity/letterpress/tree/master/app)
+[Check out the sample app](https://github.com/Pixplicity/letterpress/tree/master/app) to see how easy it is to set up.
 
 # Download
 
@@ -78,8 +78,8 @@ Download the latest [AAR](http://search.maven.org/#search|ga|1|g:"com.pixplicity
 </dependency>
 ```
 
-or Gradle:
-```Java
+Provide the dependency in Gradle:
+```Groovy
 compile 'com.pixplicity.letterpress:library:1.0'
 ```
 
