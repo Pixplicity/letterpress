@@ -16,14 +16,14 @@ You can apply your custom fonts in a few ways: by using the theme, by specifying
 
 ### Basic sample
 
-The easiest example is to set a typeface through layout attributes:
+The easiest example is to set a typeface through layout attributes. In your layouts, replace Android widgets with the Font counterparts. For instance, use `FontTextView` instead of `TextView` and it will use the *Action Man* font.
 
 ```XML
 <com.pixplicity.fontview.FontTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:pix_font="fonts/Action_Man.ttf"
-    android:text="Custom font from theme"/>
+    android:text="Custom font from attributes"/>
 ```
 
 ### Style sample
@@ -48,7 +48,7 @@ Define the style once, and you can reference it in multiple views, for instance:
     style="@style/FontEditTextStyle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Custom font from theme"/>
+    android:text="Custom font from style"/>
 ```
 
 ### Theme sample
@@ -78,7 +78,7 @@ The most scalable way to set a common typeface is through providing a custom the
 </resources>
 ```
 
-Now, in your layouts, replace Android widgets with the Font counterparts. For instance, use `FontTextView` instead of `TextView` and it will use the *Action Man* font.
+Now, your FontTextView doesn't need any attributes or styles at all, and inherits the attributes from the default style:
 
 ```XML
 <com.pixplicity.fontview.FontTextView
