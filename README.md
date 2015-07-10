@@ -2,7 +2,7 @@ letterpress
 ==============
 Custom fonts without writing code.
 
-![Sample app](https://raw.githubusercontent.com/Pixplicity/letterpress/master/raw/sample.png)
+<img src="https://raw.githubusercontent.com/Pixplicity/letterpress/master/raw/sample.png" width="350px"/>
 
 Add custom fonts to your app with out writing code, just add the fonts to your them and use the customViews.
 
@@ -56,3 +56,23 @@ Then in your layouts just use `FontTextView` instead of `TextView` and it will u
         android:text="custom font from theme"/>
 
 You can apply your custom fonts in a few ways via the Theme or via styles directly on the view or via the view attributes `pix_font`, `pix_fontBold`,`pix_fontItalic` or `pix_fontBoldItalic`
+
+# Download
+Download the latest [AAR](http://search.maven.org/#search|ga|1|g:"com.pixplicity.letterpress") or grab via Maven:
+```XML
+<dependency>
+  <groupId>com.pixplicity.letterpress</groupId>
+  <artifactId>library</artifactId>
+  <version>1.0</version>
+  <type>aar</type>
+</dependency>
+```
+
+or Gradle:
+```Java
+compile 'com.pixplicity.letterpress:library:1.0'
+```
+
+## License
+
+Licensed under the Apache license.
