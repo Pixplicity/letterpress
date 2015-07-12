@@ -1,6 +1,7 @@
 Letter Press
 ==============
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Letter%20Press-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2120)
+[![Build Status](https://travis-ci.org/Pixplicity/letterpress.svg)](https://travis-ci.org/Pixplicity/letterpress)
 
 Custom typefaces without a single line of code!
 
