@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
-    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:autoCompleteTextViewStyle">@style/FontAutoCompleteTextViewStyle</item>
         <item name="android:buttonStyle">@style/FontButtonStyle</item>
@@ -16,6 +16,12 @@
         <item name="checkboxStyle">@style/FontCheckBoxStyle</item>
         <item name="editTextStyle">@style/FontEditTextStyle</item>
         <item name="radioButtonStyle">@style/FontRadioButtonStyle</item>
+        <item name="toolbarStyle">@style/FontToolbarStyle</item>
+
+        <item name="colorPrimary">@color/primary_material_dark</item>
+        <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
+        <item name="colorAccent">@color/accent_material_dark</item>
+        <item name="android:textColorPrimary">@color/primary_text_default_material_dark</item>
     </style>
 
     <style name="AppTheme" parent="BaseTheme">

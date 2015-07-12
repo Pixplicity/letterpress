@@ -1,5 +1,33 @@
 <resources>
 
+    <style name="FontToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/AppTheme.ActionBar.Popup</item>
+        <item name="titleTextAppearance">@style/FontToolbarTitleStyle</item>
+        <item name="subtitleTextAppearance">@style/FontToolbarSubtitleStyle</item>
+    </style>
+
+    <!-- Overflow drop down style -->
+    <style name="AppTheme.ActionBar.Popup" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="FontToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+    </style>
+
+    <style name="FontToolbarSubtitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="pix_font">fonts/Action_Man.ttf</item>
+        <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
+    </style>
+
     <style name="FontAutoCompleteTextViewStyle" parent="Widget.AppCompat.AutoCompleteTextView">
         <item name="pix_font">fonts/Action_Man.ttf</item>
         <item name="pix_fontBold">fonts/Action_Man_Bold.ttf</item>

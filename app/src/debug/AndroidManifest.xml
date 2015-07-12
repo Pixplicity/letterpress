@@ -1,0 +1,6 @@
+<manifest package="com.pixplicity.fontview.sample"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application android:vmSafeMode="true"/>
+
+</manifest>
