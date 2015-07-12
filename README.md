@@ -1,5 +1,7 @@
 Letter Press
 ==============
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Letter%20Press-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2120)
+
 Custom typefaces without a single line of code!
 
 <img src="https://raw.githubusercontent.com/Pixplicity/letterpress/master/raw/sample.png" width="350px"/>
