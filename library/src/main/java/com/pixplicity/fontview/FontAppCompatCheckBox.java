@@ -6,17 +6,18 @@ import android.util.AttributeSet;
 
 import com.pixplicity.fontview.utils.FontUtil;
 
-public class FontAppCompatCheckbox extends AppCompatCheckBox {
-    public FontAppCompatCheckbox(Context context) {
+public class FontAppCompatCheckBox extends AppCompatCheckBox {
+
+    public FontAppCompatCheckBox(Context context) {
         super(context);
     }
 
-    public FontAppCompatCheckbox(Context context, AttributeSet attrs) {
+    public FontAppCompatCheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);
         setCustomFont(attrs, R.attr.checkboxStyle);
     }
 
-    public FontAppCompatCheckbox(Context context, AttributeSet attrs, int defStyle) {
+    public FontAppCompatCheckBox(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setCustomFont(attrs, defStyle);
     }
@@ -28,4 +29,5 @@ public class FontAppCompatCheckbox extends AppCompatCheckBox {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }
