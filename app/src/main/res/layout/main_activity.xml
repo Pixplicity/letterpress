@@ -31,11 +31,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="Hello World no custom font" />
 
         <com.pixplicity.fontview.FontTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="custom font from theme" />
 
         <com.pixplicity.fontview.FontTextView
@@ -53,6 +55,7 @@
         <com.pixplicity.fontview.FontButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="italic"
             android:text="I also have a customfont" />
 
         <com.pixplicity.fontview.FontCheckBox

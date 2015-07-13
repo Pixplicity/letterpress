@@ -1,30 +1,25 @@
 package com.pixplicity.fontview.utils;
 
+import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.TextView;
+import android.view.View;
 
 import com.pixplicity.fontview.R;
 
-import java.lang.ref.WeakReference;
 import java.util.HashMap;
 
 public final class FontUtil {
 
-    private static final HashMap<String, WeakReference<Typeface>> TYPEFACES
+    private static final HashMap<String, Typeface> TYPEFACES
             = new HashMap<>();
 
-    public static void setFont(@NonNull TextView view, @NonNull AttributeSet attrs, int defStyle) {
-        setFontFromAttributes(view, attrs, defStyle);
-    }
-
-    private static void setFontFromAttributes(@NonNull TextView view, @NonNull AttributeSet attrs, int defStyle) {
-        String fontName = null;
+    private static String getFontFromAttributes(@NonNull View view, @NonNull AttributeSet attrs, int defStyle) {
+        String fontName = "";
         // Look up any layout-defined attributes
         // First obtain the textStyle
         TypedArray a = view.getContext()
@@ -40,6 +35,7 @@ public final class FontUtil {
                     break;
             }
         }
+
         a.recycle();
         // Do the same for our custom attribute set
         a = view.getContext().obtainStyledAttributes(
@@ -70,35 +66,29 @@ public final class FontUtil {
                         && (fontStyle & Typeface.ITALIC) != 0)) {
                     fontName = a.getString(attr);
                 }
-
             }
         }
         a.recycle();
-
-        if (!TextUtils.isEmpty(fontName)) {
-            setFont(view, fontName);
-        }
+        return fontName;
     }
 
-    public static void setFont(@NonNull TextView view, @NonNull String font) {
-        if (view.isInEditMode()) {
-            return;
-        }
-        Typeface tf = null;
-        WeakReference<Typeface> ref = TYPEFACES.get(font);
-        if (ref != null) {
-            tf = ref.get();
-        }
-        if (tf == null) {
-            try {
-                tf = Typeface.createFromAsset(view.getContext().getAssets(), font);
-            } catch (Exception e) {
-                Log.e("FontText", "Could not get typeface: " + e.getMessage());
+    public static Typeface getTypeface(@NonNull View view, @NonNull AttributeSet attrs, int defStyle) {
+        return getTypeface(view.getContext(), getFontFromAttributes(view, attrs, defStyle));
+    }
+
+    public static Typeface getTypeface(@NonNull Context context, @NonNull String font) {
+        synchronized (TYPEFACES) {
+            Typeface tf = TYPEFACES.get(font);
+            if (tf == null) {
+                try {
+                    tf = Typeface.createFromAsset(context.getAssets(), font);
+                } catch (Exception e) {
+                    Log.e("FontText", "Could not get typeface: " + e.getMessage());
+                }
+                TYPEFACES.put(font, tf);
             }
-            TYPEFACES.put(font, new WeakReference<>(tf));
+            return tf;
         }
-        view.setPaintFlags(view.getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
-        view.setTypeface(tf);
     }
 
     private FontUtil() {

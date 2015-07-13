@@ -1,6 +1,8 @@
 package com.pixplicity.fontview;
 
 import android.content.Context;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.util.AttributeSet;
 
@@ -13,19 +15,26 @@ public class FontAppCompatCheckbox extends AppCompatCheckBox {
 
     public FontAppCompatCheckbox(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setCustomFont(attrs, R.attr.checkboxStyle);
+        setCustomTypeface(attrs, R.attr.checkboxStyle);
     }
 
     public FontAppCompatCheckbox(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setCustomFont(attrs, defStyle);
+        setCustomTypeface(attrs, defStyle);
     }
 
-    private void setCustomFont(AttributeSet attrs, int defStyle) {
-        FontUtil.setFont(this, attrs, defStyle);
+    public void setCustomTypeface(String font) {
+        final Typeface tf = FontUtil.getTypeface(getContext(), font);
+        setCustomTypeface(tf);
     }
 
-    public void setFont(String font) {
-        FontUtil.setFont(this, font);
+    private void setCustomTypeface(AttributeSet attrs, int defStyle) {
+        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        setCustomTypeface(tf);
+    }
+
+    private void setCustomTypeface(Typeface tf) {
+        setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+        setTypeface(tf);
     }
 }

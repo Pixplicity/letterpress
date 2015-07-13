@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FontView Sample</string>
+    <string name="__leak_canary_display_activity_label">FontView Leaks Sample</string>
 </resources>
