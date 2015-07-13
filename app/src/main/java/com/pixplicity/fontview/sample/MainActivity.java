@@ -19,4 +19,5 @@ public class MainActivity extends AppCompatActivity {
             supportActionBar.setDisplayShowTitleEnabled(false);
         }
     }
+
 }

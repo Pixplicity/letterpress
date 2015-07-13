@@ -33,8 +33,10 @@ public class FontAppCompatAutoCompleteTextView extends AppCompatAutoCompleteText
         final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
+
     private void setCustomTypeface(Typeface tf) {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }
