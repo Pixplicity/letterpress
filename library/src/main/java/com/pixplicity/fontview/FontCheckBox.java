@@ -42,4 +42,5 @@ public class FontCheckBox extends CheckBox {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

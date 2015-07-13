@@ -7,6 +7,7 @@ import android.widget.CompoundButton;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontCompoundButton extends CompoundButton {
+
     public FontCompoundButton(Context context) {
         super(context);
     }
@@ -28,4 +29,5 @@ public class FontCompoundButton extends CompoundButton {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

@@ -7,6 +7,7 @@ import android.widget.ToggleButton;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontToggleButton extends ToggleButton {
+
     public FontToggleButton(Context context) {
         super(context);
     }
@@ -28,4 +29,5 @@ public class FontToggleButton extends ToggleButton {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

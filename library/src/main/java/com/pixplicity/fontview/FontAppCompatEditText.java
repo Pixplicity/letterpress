@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontAppCompatEditText extends AppCompatEditText {
+
     public FontAppCompatEditText(Context context) {
         super(context);
     }
@@ -28,4 +29,5 @@ public class FontAppCompatEditText extends AppCompatEditText {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

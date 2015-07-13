@@ -76,4 +76,5 @@
         <item name="pix_fontItalic">fonts/Action_Man_Italic.ttf</item>
         <item name="pix_fontBoldItalic">fonts/Action_Man_Bold_Italic.ttf</item>
     </style>
+
 </resources>

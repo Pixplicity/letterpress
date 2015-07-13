@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 
 import com.pixplicity.fontview.utils.FontUtil;
 
-public class FontAppCompatRadioButton extends AppCompatRadioButton{
+public class FontAppCompatRadioButton extends AppCompatRadioButton {
     public FontAppCompatRadioButton(Context context) {
         super(context);
     }

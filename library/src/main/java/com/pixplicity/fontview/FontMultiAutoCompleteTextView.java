@@ -7,6 +7,7 @@ import android.widget.MultiAutoCompleteTextView;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontMultiAutoCompleteTextView extends MultiAutoCompleteTextView {
+
     public FontMultiAutoCompleteTextView(Context context) {
         super(context);
     }
@@ -28,4 +29,5 @@ public class FontMultiAutoCompleteTextView extends MultiAutoCompleteTextView {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

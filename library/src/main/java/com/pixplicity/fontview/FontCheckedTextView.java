@@ -19,6 +19,7 @@ import com.pixplicity.fontview.utils.FontUtil;
  */
 @TargetApi(3)
 public class FontCheckedTextView extends CheckedTextView {
+
     public FontCheckedTextView(Context context) {
         super(context);
     }
@@ -40,4 +41,5 @@ public class FontCheckedTextView extends CheckedTextView {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

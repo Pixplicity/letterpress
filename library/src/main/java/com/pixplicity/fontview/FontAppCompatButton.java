@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontAppCompatButton extends AppCompatButton {
+
     public FontAppCompatButton(Context context) {
         super(context);
     }
@@ -28,4 +29,5 @@ public class FontAppCompatButton extends AppCompatButton {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

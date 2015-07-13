@@ -41,4 +41,5 @@ public class FontEditText extends EditText {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

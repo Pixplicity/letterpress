@@ -42,4 +42,5 @@ public class FontButton extends Button {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }

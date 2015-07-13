@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontAppCompatCheckedTextView extends AppCompatCheckedTextView {
+
     public FontAppCompatCheckedTextView(Context context) {
         super(context);
     }
@@ -35,4 +36,5 @@ public class FontAppCompatCheckedTextView extends AppCompatCheckedTextView {
     public void setFont(String font) {
         FontUtil.setFont(this, font);
     }
+
 }
