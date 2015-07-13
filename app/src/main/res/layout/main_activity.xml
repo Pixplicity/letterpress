@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="italic"
-            android:text="I also have a customfont" />
+            android:text="I also have a customfont with italic" />
 
         <com.pixplicity.fontview.FontCheckBox
             android:layout_width="wrap_content"

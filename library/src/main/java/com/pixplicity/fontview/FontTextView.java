@@ -11,7 +11,7 @@ import com.pixplicity.fontview.utils.FontUtil;
 
 /**
  * Extension of {@link TextView} to cope with custom typefaces. Specify the desired font using the
- * {@code font="myfont.ttf"} attribute, or specify it directly using {@link #setFont(String)}.
+ * {@code font="myfont.ttf"} attribute, or specify it directly using {@link #setCustomTypeface(String)}.
  * <p>
  * Typeface management is regulated through {@link FontUtil}.
  * </p>

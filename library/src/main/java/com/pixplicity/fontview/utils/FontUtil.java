@@ -6,17 +6,15 @@ import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import com.pixplicity.fontview.R;
 
-import java.util.HashMap;
+import java.util.Hashtable;
 
 public final class FontUtil {
 
-    private static final HashMap<String, Typeface> TYPEFACES
-            = new HashMap<>();
+    private static final Hashtable<String, Typeface> TYPEFACES = new Hashtable<>();
 
     private static String getFontFromAttributes(@NonNull View view, @NonNull AttributeSet attrs, int defStyle) {
         String fontName = "";
@@ -40,6 +38,7 @@ public final class FontUtil {
         // Do the same for our custom attribute set
         a = view.getContext().obtainStyledAttributes(
                 attrs, R.styleable.FontTextView, defStyle, 0);
+
         for (int i = 0; i < a.getIndexCount(); i++) {
             final int attr = a.getIndex(i);
             if (attr == R.styleable.FontTextView_pix_font) {
@@ -76,19 +75,18 @@ public final class FontUtil {
         return getTypeface(view.getContext(), getFontFromAttributes(view, attrs, defStyle));
     }
 
-    public static Typeface getTypeface(@NonNull Context context, @NonNull String font) {
-        synchronized (TYPEFACES) {
-            Typeface tf = TYPEFACES.get(font);
-            if (tf == null) {
-                try {
-                    tf = Typeface.createFromAsset(context.getAssets(), font);
-                } catch (Exception e) {
-                    Log.e("FontText", "Could not get typeface: " + e.getMessage());
-                }
-                TYPEFACES.put(font, tf);
+    public static Typeface getTypeface(@NonNull Context context, @NonNull String fontName) {
+        Typeface tf = TYPEFACES.get(fontName);
+        if (tf == null) {
+            try {
+                tf = Typeface.createFromAsset(context.getAssets(), fontName);
+            } catch (Exception e) {
+                return null;
             }
-            return tf;
+            TYPEFACES.put(fontName, tf);
         }
+        return tf;
+
     }
 
     private FontUtil() {

@@ -26,3 +26,5 @@ proguard/
 
 # Log Files
 *.log
+
+/captures
