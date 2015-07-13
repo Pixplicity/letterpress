@@ -26,7 +26,7 @@ android:
     - addon-google_apis-google-22
     
 script:
-  - TERM=dumb ./gradlew clean install bintrayUpload -PdisablePreDex
+  - TERM=dumb ./gradlew clean check assemble -PdisablePreDex
 
 notifications:
   email: false
