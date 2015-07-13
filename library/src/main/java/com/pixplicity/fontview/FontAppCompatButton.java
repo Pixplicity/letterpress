@@ -29,7 +29,7 @@ public class FontAppCompatButton extends AppCompatButton {
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 

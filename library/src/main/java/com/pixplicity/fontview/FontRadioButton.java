@@ -12,7 +12,7 @@ import com.pixplicity.fontview.utils.FontUtil;
 /**
  * Extension of {@link android.widget.CheckBox} to cope with custom typefaces. Specify the desired
  * font using the
- * {@code font="myfont.ttf"} attribute, or specify it directly using {@link #setFont(String)}.
+ * {@code font="myfont.ttf"} attribute, or specify it directly using {@link #setCustomTypeface(String)}.
  * <p>
  * Typeface management is regulated through {@link FontUtil}.
  * </p>
@@ -42,7 +42,7 @@ public class FontRadioButton extends RadioButton {
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 

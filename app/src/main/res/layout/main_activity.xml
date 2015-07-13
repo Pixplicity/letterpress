@@ -10,8 +10,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:elevation="4dp">
+        android:layout_height="wrap_content">
 
         <com.pixplicity.fontview.FontTextView
             android:id="@+id/toolbar_title"
@@ -33,17 +32,12 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="8dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="Hello World no custom font" />
 
-        <com.pixplicity.fontview.FontTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="custom font from theme" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World no custom font"
+                android:textStyle="bold"/>
 
             <com.pixplicity.fontview.FontAppCompatTextView
                 android:layout_width="wrap_content"

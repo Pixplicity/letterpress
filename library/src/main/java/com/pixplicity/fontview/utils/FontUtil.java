@@ -6,7 +6,6 @@ import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.view.View;
 
 import com.pixplicity.fontview.R;
 
@@ -16,14 +15,13 @@ public final class FontUtil {
 
     private static final Hashtable<String, Typeface> TYPEFACES = new Hashtable<>();
 
-    private static String getFontFromAttributes(@NonNull View view, @NonNull AttributeSet attrs, int defStyle) {
+    private static String getFontFromAttributes(@NonNull Context context, @NonNull AttributeSet attrs, int defStyle) {
         String fontName = "";
         // Look up any layout-defined attributes
         // First obtain the textStyle
-        TypedArray a = view.getContext()
-                           .obtainStyledAttributes(attrs, new int[]{
-                                   android.R.attr.textStyle
-                           });
+        TypedArray a = context.obtainStyledAttributes(attrs, new int[]{
+                android.R.attr.textStyle
+        });
         int fontStyle = 0;
         for (int i = 0; i < a.getIndexCount(); i++) {
             int attr = a.getIndex(i);
@@ -36,7 +34,7 @@ public final class FontUtil {
 
         a.recycle();
         // Do the same for our custom attribute set
-        a = view.getContext().obtainStyledAttributes(
+        a = context.obtainStyledAttributes(
                 attrs, R.styleable.FontTextView, defStyle, 0);
 
         for (int i = 0; i < a.getIndexCount(); i++) {
@@ -71,8 +69,8 @@ public final class FontUtil {
         return fontName;
     }
 
-    public static Typeface getTypeface(@NonNull View view, @NonNull AttributeSet attrs, int defStyle) {
-        return getTypeface(view.getContext(), getFontFromAttributes(view, attrs, defStyle));
+    public static Typeface getTypeface(@NonNull Context context, @NonNull AttributeSet attrs, int defStyle) {
+        return getTypeface(context, getFontFromAttributes(context, attrs, defStyle));
     }
 
     public static Typeface getTypeface(@NonNull Context context, @NonNull String fontName) {

@@ -30,7 +30,7 @@ public class FontAppCompatMultiAutoCompleteTextView extends AppCompatMultiAutoCo
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 

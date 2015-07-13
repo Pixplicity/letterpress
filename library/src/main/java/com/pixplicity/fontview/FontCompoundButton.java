@@ -25,7 +25,7 @@ public class FontCompoundButton extends CompoundButton {
     }
 
     private void setCustomFont(AttributeSet attrs, int defStyle) {
-        FontUtil.getTypeface(this, attrs, defStyle);
+        FontUtil.getTypeface(getContext(), attrs, defStyle);
     }
 
     public void setCustomTypeface(String font) {
@@ -34,7 +34,7 @@ public class FontCompoundButton extends CompoundButton {
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 
