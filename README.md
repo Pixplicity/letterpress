@@ -105,7 +105,7 @@ Download the latest [AAR](http://search.maven.org/#search|ga|1|g:"com.pixplicity
 
 Provide the dependency in Gradle:
 ```Groovy
-compile 'com.pixplicity.letterpress:library:1.0'
+compile 'com.pixplicity.letterpress:library:(insert latest version)'
 ```
 
 ## License
