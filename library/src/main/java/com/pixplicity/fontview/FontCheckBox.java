@@ -51,4 +51,5 @@ public class FontCheckBox extends CheckBox {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }

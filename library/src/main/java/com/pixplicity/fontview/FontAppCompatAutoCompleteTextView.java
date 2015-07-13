@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontAppCompatAutoCompleteTextView extends AppCompatAutoCompleteTextView {
+
     public FontAppCompatAutoCompleteTextView(Context context) {
         super(context);
     }

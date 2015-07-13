@@ -77,7 +77,7 @@
         <attr name="pix_fontItalic"/>
         <attr name="pix_fontBoldItalic"/>
     </declare-styleable>
-    <declare-styleable name="FontAppCompatCheckbox">
+    <declare-styleable name="FontAppCompatCheckBox">
         <attr name="pix_font"/>
         <attr name="pix_fontBold"/>
         <attr name="pix_fontItalic"/>

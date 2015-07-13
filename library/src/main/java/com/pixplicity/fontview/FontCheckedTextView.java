@@ -21,6 +21,7 @@ import com.pixplicity.fontview.utils.FontUtil;
  */
 @TargetApi(3)
 public class FontCheckedTextView extends CheckedTextView {
+
     public FontCheckedTextView(Context context) {
         super(context);
     }
@@ -49,4 +50,5 @@ public class FontCheckedTextView extends CheckedTextView {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }

@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontAppCompatButton extends AppCompatButton {
+
     public FontAppCompatButton(Context context) {
         super(context);
     }
@@ -36,4 +37,5 @@ public class FontAppCompatButton extends AppCompatButton {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }

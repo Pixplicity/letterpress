@@ -9,6 +9,7 @@ import android.widget.ToggleButton;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontToggleButton extends ToggleButton {
+
     public FontToggleButton(Context context) {
         super(context);
     }
@@ -37,4 +38,5 @@ public class FontToggleButton extends ToggleButton {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }

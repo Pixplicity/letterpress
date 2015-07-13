@@ -21,9 +21,9 @@ public final class FontUtil {
         // Look up any layout-defined attributes
         // First obtain the textStyle
         TypedArray a = view.getContext()
-                .obtainStyledAttributes(attrs, new int[]{
-                        android.R.attr.textStyle
-                });
+                           .obtainStyledAttributes(attrs, new int[]{
+                                   android.R.attr.textStyle
+                           });
         int fontStyle = 0;
         for (int i = 0; i < a.getIndexCount(); i++) {
             int attr = a.getIndex(i);
@@ -90,5 +90,7 @@ public final class FontUtil {
     }
 
     private FontUtil() {
+        // Forbid class creation
     }
+
 }

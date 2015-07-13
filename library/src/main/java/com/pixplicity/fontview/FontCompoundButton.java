@@ -9,6 +9,7 @@ import android.widget.CompoundButton;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontCompoundButton extends CompoundButton {
+
     public FontCompoundButton(Context context) {
         super(context);
     }
@@ -41,4 +42,5 @@ public class FontCompoundButton extends CompoundButton {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }
