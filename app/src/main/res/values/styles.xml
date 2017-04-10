@@ -3,9 +3,12 @@
     <style name="FontToolbarStyle" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorPrimary</item>
         <item name="android:minHeight">?attr/actionBarSize</item>
-        <item name="popupTheme">@style/AppTheme.ActionBar.Popup</item>
         <item name="titleTextAppearance">@style/FontToolbarTitleStyle</item>
         <item name="subtitleTextAppearance">@style/FontToolbarSubtitleStyle</item>
+        <item name="popupTheme">@style/Theme.AppCompat.NoActionBar</item>
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_primary_text_material_dark</item>
     </style>
 
     <!-- Overflow drop down style -->

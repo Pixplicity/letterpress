@@ -57,6 +57,7 @@
                 app:pix_font="fonts/Action_Man.ttf"/>
 
             <com.pixplicity.fontview.FontAppCompatButton
+                android:id="@+id/bt_popup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -99,6 +100,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="FontMultiAutoCompleteTextView"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 

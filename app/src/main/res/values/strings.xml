@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">FontView Sample</string>
     <string name="__leak_canary_display_activity_label">FontView Leaks Sample</string>
+
+    <string-array name="spinner_list">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
 </resources>
