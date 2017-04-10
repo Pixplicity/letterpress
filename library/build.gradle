@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.noveogroup.android.check'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 25
     buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
-    
+
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 9
         targetSdkVersion Integer.parseInt(ANDROID_TARGET_SDK)
         versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
@@ -43,7 +43,7 @@ check {
     }
 }
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
 }
 
 apply from: new File('../bintray_upload.gradle')
