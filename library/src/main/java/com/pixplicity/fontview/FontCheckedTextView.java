@@ -12,7 +12,7 @@ import com.pixplicity.fontview.utils.FontUtil;
 
 /**
  * Extension of {@link CheckedTextView} to cope with custom typefaces. Specify the desired font using the
- * {@code font="myfont.ttf"} attribute, or specify it directly using {@link #setFont(String)}.
+ * {@code font="myfont.ttf"} attribute, or specify it directly using {@link #setCustomTypeface(String)}.
  * <p>
  * Typeface management is regulated through {@link FontUtil}.
  * </p>
@@ -21,6 +21,7 @@ import com.pixplicity.fontview.utils.FontUtil;
  */
 @TargetApi(3)
 public class FontCheckedTextView extends CheckedTextView {
+
     public FontCheckedTextView(Context context) {
         super(context);
     }
@@ -41,7 +42,7 @@ public class FontCheckedTextView extends CheckedTextView {
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 
@@ -49,4 +50,5 @@ public class FontCheckedTextView extends CheckedTextView {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }

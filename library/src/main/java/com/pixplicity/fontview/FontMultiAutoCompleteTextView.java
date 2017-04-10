@@ -9,6 +9,7 @@ import android.widget.MultiAutoCompleteTextView;
 import com.pixplicity.fontview.utils.FontUtil;
 
 public class FontMultiAutoCompleteTextView extends MultiAutoCompleteTextView {
+
     public FontMultiAutoCompleteTextView(Context context) {
         super(context);
     }
@@ -29,7 +30,7 @@ public class FontMultiAutoCompleteTextView extends MultiAutoCompleteTextView {
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 
@@ -37,4 +38,5 @@ public class FontMultiAutoCompleteTextView extends MultiAutoCompleteTextView {
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }

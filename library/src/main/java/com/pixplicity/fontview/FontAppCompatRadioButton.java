@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 
 import com.pixplicity.fontview.utils.FontUtil;
 
-public class FontAppCompatRadioButton extends AppCompatRadioButton{
+public class FontAppCompatRadioButton extends AppCompatRadioButton {
     public FontAppCompatRadioButton(Context context) {
         super(context);
     }
@@ -29,7 +29,7 @@ public class FontAppCompatRadioButton extends AppCompatRadioButton{
     }
 
     private void setCustomTypeface(AttributeSet attrs, int defStyle) {
-        final Typeface tf = FontUtil.getTypeface(this, attrs, defStyle);
+        final Typeface tf = FontUtil.getTypeface(getContext(), attrs, defStyle);
         setCustomTypeface(tf);
     }
 
@@ -37,4 +37,5 @@ public class FontAppCompatRadioButton extends AppCompatRadioButton{
         setPaintFlags(getPaintFlags() | Paint.SUBPIXEL_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
         setTypeface(tf);
     }
+
 }
