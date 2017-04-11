@@ -2,6 +2,7 @@ Letter Press
 ==============
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Letter%20Press-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2120)
 [![Build Status](https://travis-ci.org/Pixplicity/letterpress.svg)](https://travis-ci.org/Pixplicity/letterpress)
+[![Download](https://api.bintray.com/packages/pixplicity/android/letterpress/images/download.svg) ](https://bintray.com/pixplicity/android/letterpress/_latestVersion)
 
 Custom typefaces without a single line of code!
 
@@ -92,7 +93,7 @@ Now, your FontTextView doesn't need any attributes or styles at all, and inherit
 
 # Download
 
-Download the latest [AAR](http://search.maven.org/#search|ga|1|g:"com.pixplicity.letterpress") or grab via Maven:
+Download the latest [AAR](https://bintray.com/pixplicity/android/letterpress) or grab via Maven:
 
 ```XML
 <dependency>
