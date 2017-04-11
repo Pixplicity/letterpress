@@ -50,11 +50,6 @@ install {
                         name POM_DEVELOPER_NAME_1
                         email POM_DEVELOPER_EMAIL_1
                     }
-                    developer {
-                        id POM_DEVELOPER_ID_2
-                        name POM_DEVELOPER_NAME_2
-                        email POM_DEVELOPER_EMAIL_2
-                    }
                 }
                 scm {
                     connection POM_SCM_CONNECTION

@@ -6,24 +6,30 @@ android {
 
     defaultConfig {
         applicationId GROUP + '.fontview.sample'
-        minSdkVersion 7
+        minSdkVersion 9
         targetSdkVersion Integer.parseInt(ANDROID_TARGET_SDK)
         versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
     }
+    
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile project(':library')
 }

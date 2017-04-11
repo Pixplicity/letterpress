@@ -4,11 +4,17 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.pixplicity.fontview.R;
 
+import java.security.InvalidParameterException;
 import java.util.Hashtable;
 
 public final class FontUtil {
@@ -49,14 +55,12 @@ public final class FontUtil {
                         && (fontStyle & Typeface.ITALIC) == 0)) {
                     fontName = a.getString(attr);
                 }
-
             } else if (attr == R.styleable.FontTextView_pix_fontItalic) {
                 if (TextUtils.isEmpty(fontName)
                         || ((fontStyle & Typeface.BOLD) == 0
                         && (fontStyle & Typeface.ITALIC) != 0)) {
                     fontName = a.getString(attr);
                 }
-
             } else if (attr == R.styleable.FontTextView_pix_fontBoldItalic) {
                 if (TextUtils.isEmpty(fontName)
                         || ((fontStyle & Typeface.BOLD) != 0
@@ -84,11 +88,49 @@ public final class FontUtil {
             TYPEFACES.put(fontName, tf);
         }
         return tf;
+    }
 
+    public static void applyTypeface(@NonNull TextView view, @NonNull Typeface typeface) {
+        view.setTypeface(typeface);
+    }
+
+    public static void applyTypeface(@NonNull TextView view, @NonNull String fontName) {
+        final Typeface typeface = getTypeface(view.getContext(), fontName);
+        view.setTypeface(typeface);
+    }
+
+    @NonNull
+    public static SpannableString applyTypeface(@NonNull String text, @NonNull Context
+            context, @NonNull String fontName) {
+        final Typeface typeface = getTypeface(context, fontName);
+        if (typeface == null) {
+            throw new InvalidParameterException("Font '" + fontName + "' not found");
+        }
+        return applyTypeface(text, typeface);
+    }
+
+    @NonNull
+    public static SpannableString applyTypeface(final @NonNull String text, final @NonNull Typeface
+            typeface) {
+        SpannableString spannableString = new SpannableString(text);
+        FontSpan span = new FontSpan(typeface);
+        spannableString.setSpan(span, 0, spannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return spannableString;
+    }
+
+    /**
+     * Applies a Typeface onto an overflow or popup menu
+     *
+     * @param menu The menu to typefacesize
+     */
+    public static void applyTypeface(@NonNull Menu menu, final @NonNull Typeface typeface) {
+        for (int i = 0; i < menu.size(); i++) {
+            MenuItem item = menu.getItem(i);
+            item.setTitle(applyTypeface(item.getTitle().toString(), typeface));
+        }
     }
 
     private FontUtil() {
         // Forbid class creation
     }
-
 }
